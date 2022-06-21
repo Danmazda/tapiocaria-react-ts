@@ -11,7 +11,7 @@ export const colors = {
   baseForm: "#2D303E",
   baseLine: "#393C49",
 
-  textColor: "#ffffff",
+  textColor: "#000000",
   textLighter: "#E0E6E9",
   textLight: "#ABBBC2",
   textNeutral: "#889898",

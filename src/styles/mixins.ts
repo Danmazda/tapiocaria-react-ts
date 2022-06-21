@@ -90,11 +90,10 @@ const buttonToggle = (active = false) => css`
 `;
 
 const input = () => css`
-  height: 48px;
   border-radius: 8px;
-  padding: 14px;
-  background: ${colors.baseForm};
-  border: 1px solid ${colors.baseLine};
+  padding: 3px;
+  background: ${colors.baseBg1};
+  border: none;
   box-sizing: border-box;
 `;
 
