@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme";
+import { BrowserRouter } from "react-router-dom";
+import { QueryClientProvider, QueryClient } from "react-query";
+import Router from "./routes";
 
+const queryClient = new QueryClient();
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <QueryClientProvider client={queryClient}>
+            <Router />
+          </QueryClientProvider>
+        </BrowserRouter>
+      </ThemeProvider>
     </div>
   );
 }
