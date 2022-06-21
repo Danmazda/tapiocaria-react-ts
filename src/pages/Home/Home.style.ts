@@ -10,9 +10,10 @@ export const Home = styled.section`
 export const HomeContent = styled.section`
   ${({ theme }) => css`
     width: 90%;
-    background-color: ${theme.colors.baseBg2};
+    background-color: ${theme.colors.baseBg1};
     height: 94%;
     margin: 0 auto;
     margin-top: 1%;
+    border: 1px solid red;
   `}
 `;

@@ -1,5 +1,4 @@
 import * as S from "./Header.style";
-import { Link } from "react-router-dom";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Market } from "../../assets/icons/market.svg";
 import RoutePath from "../../types/routes";
