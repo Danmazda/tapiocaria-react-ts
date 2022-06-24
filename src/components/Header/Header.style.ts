@@ -52,8 +52,7 @@ export const HeaderSearch = styled.div`
     padding: 0.3em;
     border-radius: 5px;
     gap: 6px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(189, 189, 189, 0.27);
-    box-shadow: 5px 5px 15px 5px rgba(189, 189, 189, 0.27);
+    ${theme.mixins.lightBoxShadow}
     input {
       ${theme.mixins.input()}
     }

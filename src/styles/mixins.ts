@@ -110,6 +110,10 @@ const select = (important = true) => css`
   background-position: 85%;
 `;
 
+const lightBoxShadow = () => css`
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(189, 189, 189, 0.27);
+  box-shadow: 5px 5px 15px 5px rgba(189, 189, 189, 0.27);
+`;
 export const mixins = {
   bodyStyle,
   buttonFilled,
@@ -121,4 +125,5 @@ export const mixins = {
   logoStyle,
   overlay,
   select,
+  lightBoxShadow
 };
