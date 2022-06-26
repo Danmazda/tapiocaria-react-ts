@@ -39,6 +39,9 @@ export const MenuLogo = styled.div`
   ${() => css`
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    text-transform: capitalize;
     padding: 0 0 20px 0;
     img {
       max-height: 80%;
@@ -46,12 +49,14 @@ export const MenuLogo = styled.div`
     }
   `}
 `;
-export const MenuButtonsContainer = styled.div`${({theme})=>css`
-  color: ${theme.colors};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`}`
+export const MenuButtonsContainer = styled.div`
+  ${({ theme }) => css`
+    color: ${theme.colors};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `}
+`;
 const MenuItemModifiers = {
   active: (theme: Theme) => css`
     background-color: ${theme.colors.baseBg1};
