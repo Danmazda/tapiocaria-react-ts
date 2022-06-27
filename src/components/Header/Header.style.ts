@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 export const Header = styled.header`
   ${({ theme }) => css`
     background-color: transparent;
-    border: 1px solid red;
     width: 100%;
     display: flex;
     justify-content: space-between;

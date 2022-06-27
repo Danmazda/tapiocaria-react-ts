@@ -7,7 +7,7 @@ export const colors = {
   shadowColor: "#6CEA69",
 
   baseBg1: "#ffffff",
-  baseBg2: "#1F1D2B",
+  baseBg2: "#f99c3e",
   baseForm: "#2D303E",
   baseLine: "#393C49",
 

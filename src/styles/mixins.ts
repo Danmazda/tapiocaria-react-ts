@@ -42,8 +42,10 @@ const buttonOutline = (color = colors.primaryColor, circle = false) => css`
   border-radius: 3px;
   color: white;
   padding: 1em 1.5em;
-  color: ${color};
   ${circle && buttonOutlineModifiers.circle()}
+  :hover{
+    cursor: pointer;
+  }
 `;
 
 const buttonFilled = (color = colors.primaryColor) => css`
@@ -89,12 +91,16 @@ const buttonToggle = (active = false) => css`
   color: ${active ? colors.textColor : colors.primaryColor};
 `;
 
-const input = () => css`
-  border-radius: 8px;
-  padding: 3px;
-  background: ${colors.baseBg1};
+const input = (color = 'white')  => css`
+  border-radius: 2px;
+  background: ${color};
   border: none;
   box-sizing: border-box;
+  height: 1.4em;
+  padding: 1.3em;
+  :focus{
+    outline: none;
+  }
 `;
 
 const select = (important = true) => css`

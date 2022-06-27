@@ -1,10 +1,9 @@
 import * as S from "./Header.style";
-import { DateTime } from "luxon";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Market } from "../../assets/icons/market.svg";
 import RoutePath from "../../types/routes";
 export const Header = () => {
- 
+
   return (
     <S.Header>
       <S.HeaderLogo>
